@@ -15,3 +15,11 @@ def newDeploy(jobname,ipaddress,context)
 }
 
 
+def runSelenium(jobname)
+{
+
+   sh "java -jar /var/lib/jenkins/workspace/${jobname}/testing.jar"
+}
+
+
+
